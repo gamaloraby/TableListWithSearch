@@ -9,6 +9,11 @@ import UIKit
 
 class InfoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var OwnerImg: UIImageView!
+    @IBOutlet weak var RepoName: UILabel!
+    @IBOutlet weak var OwnerName: UILabel!
+    @IBOutlet weak var CreationDate: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

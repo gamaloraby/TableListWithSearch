@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8638ADE0258EAC4800B6DAFB /* InfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8638ADDF258EAC4800B6DAFB /* InfoService.swift */; };
+		865FE3F025916B7500AF264C /* DetailesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FE3EF25916B7500AF264C /* DetailesController.swift */; };
 		86DAA770258C0E110033370E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DAA76F258C0E110033370E /* AppDelegate.swift */; };
 		86DAA772258C0E110033370E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DAA771258C0E110033370E /* SceneDelegate.swift */; };
 		86DAA774258C0E110033370E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DAA773258C0E110033370E /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 		86DAA77F258C0E140033370E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DAA77D258C0E140033370E /* LaunchScreen.storyboard */; };
 		86DAA78A258C0E150033370E /* RobustaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DAA789258C0E150033370E /* RobustaTests.swift */; };
 		86DAA795258C0E150033370E /* RobustaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DAA794258C0E150033370E /* RobustaUITests.swift */; };
+		86DAA7E1258C1FA10033370E /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DAA7DF258C1FA10033370E /* InfoTableViewCell.swift */; };
+		86DAA7E2258C1FA10033370E /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86DAA7E0258C1FA10033370E /* InfoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8638ADDF258EAC4800B6DAFB /* InfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoService.swift; sourceTree = "<group>"; };
+		865FE3EF25916B7500AF264C /* DetailesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailesController.swift; sourceTree = "<group>"; };
 		86DAA76C258C0E100033370E /* Robusta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Robusta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DAA76F258C0E110033370E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86DAA771258C0E110033370E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,8 @@
 		86DAA790258C0E150033370E /* RobustaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobustaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DAA794258C0E150033370E /* RobustaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobustaUITests.swift; sourceTree = "<group>"; };
 		86DAA796258C0E150033370E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86DAA7DF258C1FA10033370E /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		86DAA7E0258C1FA10033370E /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8638ADDE258EAC0D00B6DAFB /* ServicesHandler */ = {
+			isa = PBXGroup;
+			children = (
+				8638ADDF258EAC4800B6DAFB /* InfoService.swift */,
+			);
+			path = ServicesHandler;
+			sourceTree = "<group>";
+		};
 		86DAA763258C0E100033370E = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +117,10 @@
 		86DAA76E258C0E100033370E /* Robusta */ = {
 			isa = PBXGroup;
 			children = (
-				86DAA76F258C0E110033370E /* AppDelegate.swift */,
-				86DAA771258C0E110033370E /* SceneDelegate.swift */,
-				86DAA773258C0E110033370E /* ViewController.swift */,
-				86DAA775258C0E110033370E /* Main.storyboard */,
-				86DAA77B258C0E140033370E /* Assets.xcassets */,
-				86DAA77D258C0E140033370E /* LaunchScreen.storyboard */,
+				86DAA7B5258C12200033370E /* SupportingFiles */,
+				86DAA7B4258C11DA0033370E /* Models */,
+				86DAA7B3258C11B50033370E /* Controllers */,
+				86DAA7B2258C11A00033370E /* Views */,
 				86DAA780258C0E140033370E /* Info.plist */,
 				86DAA778258C0E110033370E /* Robusta.xcdatamodeld */,
 			);
@@ -129,6 +143,44 @@
 				86DAA796258C0E150033370E /* Info.plist */,
 			);
 			path = RobustaUITests;
+			sourceTree = "<group>";
+		};
+		86DAA7B2258C11A00033370E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86DAA7E0258C1FA10033370E /* InfoTableViewCell.xib */,
+				86DAA775258C0E110033370E /* Main.storyboard */,
+				86DAA77D258C0E140033370E /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		86DAA7B3258C11B50033370E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86DAA773258C0E110033370E /* ViewController.swift */,
+				86DAA7DF258C1FA10033370E /* InfoTableViewCell.swift */,
+				865FE3EF25916B7500AF264C /* DetailesController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		86DAA7B4258C11DA0033370E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8638ADDE258EAC0D00B6DAFB /* ServicesHandler */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86DAA7B5258C12200033370E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				86DAA76F258C0E110033370E /* AppDelegate.swift */,
+				86DAA771258C0E110033370E /* SceneDelegate.swift */,
+				86DAA77B258C0E140033370E /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86DAA77F258C0E140033370E /* LaunchScreen.storyboard in Resources */,
+				86DAA7E2258C1FA10033370E /* InfoTableViewCell.xib in Resources */,
 				86DAA77C258C0E140033370E /* Assets.xcassets in Resources */,
 				86DAA777258C0E110033370E /* Main.storyboard in Resources */,
 			);
@@ -262,7 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				86DAA77A258C0E110033370E /* Robusta.xcdatamodeld in Sources */,
+				8638ADE0258EAC4800B6DAFB /* InfoService.swift in Sources */,
+				86DAA7E1258C1FA10033370E /* InfoTableViewCell.swift in Sources */,
 				86DAA774258C0E110033370E /* ViewController.swift in Sources */,
+				865FE3F025916B7500AF264C /* DetailesController.swift in Sources */,
 				86DAA770258C0E110033370E /* AppDelegate.swift in Sources */,
 				86DAA772258C0E110033370E /* SceneDelegate.swift in Sources */,
 			);
