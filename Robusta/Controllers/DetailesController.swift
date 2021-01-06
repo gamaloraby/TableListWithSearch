@@ -8,22 +8,18 @@
 import UIKit
 
 class DetailesController: UIViewController {
-
+    var data : Data?
+    var repoName : String?
+    var owner : String?
+    
+    @IBOutlet weak var avaatarIMG: UIImageView!
+    @IBOutlet weak var repo : UILabel!
+    @IBOutlet weak var ownerName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        avaatarIMG.layer.cornerRadius = avaatarIMG.frame.width / 2
+        avaatarIMG.image = UIImage(data: data!)
+        repo.text = repoName
+        ownerName.text = owner
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

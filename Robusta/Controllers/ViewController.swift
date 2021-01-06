@@ -59,6 +59,7 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
         return FiltredItems.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let TableCell = tableView.dequeueReusableCell(withIdentifier: "InfoCell") as! InfoTableViewCell
         TableCell.RepoName.text = FiltredItems[indexPath.row]
@@ -67,7 +68,6 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
         if dataList.count > 0 {
             TableCell.OwnerImg.image = UIImage(data:dataList[indexPath.row])
         }
-       
         return TableCell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

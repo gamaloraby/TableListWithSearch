@@ -79,7 +79,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ej-of-0Cb">
-                                <rect key="frame" x="166" y="554" width="82.5" height="42"/>
+                                <rect key="frame" x="166" y="559" width="82.5" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -93,7 +93,7 @@
                             <constraint firstItem="Zbj-IV-btR" firstAttribute="trailing" secondItem="Ojl-iM-Xwi" secondAttribute="trailing" constant="50" id="Hfk-un-Zpt"/>
                             <constraint firstItem="1Ej-of-0Cb" firstAttribute="centerX" secondItem="Zbj-IV-btR" secondAttribute="centerX" id="Py4-c0-roS"/>
                             <constraint firstItem="Ojl-iM-Xwi" firstAttribute="top" secondItem="Zbj-IV-btR" secondAttribute="top" constant="50" id="YJt-Gq-dVe"/>
-                            <constraint firstItem="1Ej-of-0Cb" firstAttribute="top" secondItem="td9-zl-17S" secondAttribute="bottom" constant="30" id="ZOA-Ec-1we"/>
+                            <constraint firstItem="1Ej-of-0Cb" firstAttribute="top" secondItem="td9-zl-17S" secondAttribute="bottom" constant="35" id="ZOA-Ec-1we"/>
                             <constraint firstItem="td9-zl-17S" firstAttribute="centerX" secondItem="Zbj-IV-btR" secondAttribute="centerX" id="fd7-1m-OtP"/>
                         </constraints>
                     </view>

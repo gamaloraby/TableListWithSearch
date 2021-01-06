@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 class InfoService {
     typealias responseHandler = (_ repoName : [String] , _ ownerName : [String] , _ avatarImg : [String] , _ datesList : [String])->Void
     typealias  createdDateHandler = (_ datesList : [String])->Void

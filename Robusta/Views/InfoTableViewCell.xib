@@ -25,7 +25,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repository Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOi-9c-QLa">
-                        <rect key="frame" x="113" y="46" width="126.5" height="21"/>
+                        <rect key="frame" x="115" y="46" width="126.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -47,7 +47,7 @@
                     <constraint firstItem="dSk-rU-W1B" firstAttribute="top" secondItem="JOi-9c-QLa" secondAttribute="bottom" constant="10" id="671-OQ-q3d"/>
                     <constraint firstItem="pFZ-fx-KXK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="6b1-kZ-T9W"/>
                     <constraint firstItem="mDt-6o-lx6" firstAttribute="top" secondItem="pFZ-fx-KXK" secondAttribute="top" id="7Gl-DJ-gtu"/>
-                    <constraint firstItem="JOi-9c-QLa" firstAttribute="leading" secondItem="pFZ-fx-KXK" secondAttribute="trailing" constant="10" id="7XS-PZ-fEc"/>
+                    <constraint firstItem="JOi-9c-QLa" firstAttribute="leading" secondItem="pFZ-fx-KXK" secondAttribute="trailing" constant="12" id="7XS-PZ-fEc"/>
                     <constraint firstAttribute="bottom" secondItem="pFZ-fx-KXK" secondAttribute="bottom" constant="10" id="Gtx-uJ-I0U"/>
                     <constraint firstItem="pFZ-fx-KXK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ILh-Gz-e5b"/>
                     <constraint firstItem="dSk-rU-W1B" firstAttribute="leading" secondItem="pFZ-fx-KXK" secondAttribute="trailing" constant="10" id="Psl-aV-AC9"/>
